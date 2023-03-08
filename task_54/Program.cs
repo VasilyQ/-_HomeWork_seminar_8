@@ -38,9 +38,7 @@ void CountMatrix(int[,] matrix)
 {
     for (int i = 0; i < matrix.GetLength(0); i++)
     {
-        int count = matrix.GetLength(1);
         int min = 0;
-
         for (int k = matrix.GetLength(1); k > 0; k--)
         {
             for (int j = 0; j < matrix.GetLength(1)-1; j++)
@@ -57,7 +55,7 @@ void CountMatrix(int[,] matrix)
 }
 
 
-int[,] newMatrix =MatrixRandom(4,3);
+int[,] newMatrix =MatrixRandom(3,4);
 PrintMatrix(newMatrix);
 CountMatrix(newMatrix);
 Console.WriteLine();
