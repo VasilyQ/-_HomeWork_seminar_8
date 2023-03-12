@@ -12,7 +12,7 @@ int[,] PrintMatrix(int[,] matrix)
     return matrix;
 }
  
-int[,] matrix = new int[5,5];
+int[,] matrix = new int[4,4];
 int length = matrix.GetLength(0);
 int lengthMatrix = matrix.Length;
 int i = 0;
@@ -22,7 +22,7 @@ int index = 0;
 int countMatrix = 0;
 
 
-while(countMatrix != lengthMatrix-1)
+while(countMatrix < lengthMatrix-1)
 {
     while(count != 1 )
     {   
